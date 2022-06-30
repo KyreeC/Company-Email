@@ -1,4 +1,3 @@
-# UCF-CS-15-Labs
-Labs and notes from Python course.
+# Company Email
 
-Adding Something Random
+Automate creation of a new company email for all new employees.
