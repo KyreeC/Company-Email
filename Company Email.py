@@ -1,3 +1,5 @@
+import random
+
 name = input("Enter your first name: ")
 Last_Name = input("Enter your last name: ")
 age = int(input("Enter your age: "))
@@ -6,8 +8,8 @@ age = int(input("Enter your age: "))
 New_Email = name[0] + Last_Name + "@Company.com"
 
 if age >= 16:
-    print("Your email is " + New_Email)
-    print("Your email is: \n" + New_Email)
+    print("Your email is: " + New_Email)
+    print("Your company ID is: " + str(random.randint(100000, 999999)))
 else:
     adult_age = int(input("Enter your guardians age: "))
         
@@ -16,7 +18,8 @@ else:
             signature = input("I need an adult signature for your account to be verified, please enter your guardian signature here: ")
 
             if signature != "":  # Checks to make sure the signature is not empty.
-                print("Your email is: \n" + New_Email)
+                print("Your email is: " + New_Email)
+                print("Your company ID is: " + str(random.randint(100000, 999999)))
             else:
                 print("Invalid signature, please contact your administrator.")
 
